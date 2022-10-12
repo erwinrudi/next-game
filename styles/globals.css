@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ruda', sans-serif;
+  color: var(--font-color);
+  font-size: 1.4rem;
+  background-color: var(--black);
+}
+
+:root {
+  --black: #000;
+  --light-black:rgb(39, 39, 39);
+  --white: #fff;
+  --light-grey: #C4C4C4;
+  --dark-grey: rgb(100,100,100);
+  --red: rgb(199, 65, 65);
+  --font-color: rgba(255,255,255, 0.66);
+  --light-red: #F56767;
+  font-size: 62.5%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#__next {
+  background-image: linear-gradient(155deg, #202020 20%, #000000 50%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes resizeBall {
+  50% {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@keyframes fromAbove {
+  0% {
+    bottom: 33px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  font-family: 'Montserrat', sans-serif; */
